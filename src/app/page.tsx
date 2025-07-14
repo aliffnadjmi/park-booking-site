@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import React, { useState } from "react";
 
 export default function Home() {
   const [date, setDate] = useState("");
@@ -10,7 +10,6 @@ export default function Home() {
   const [submitted, setSubmitted] = useState(false);
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-
     e.preventDefault();
     console.log({ date, name, email, details });
     setSubmitted(true);
