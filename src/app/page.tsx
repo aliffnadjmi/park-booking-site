@@ -9,7 +9,8 @@ export default function Home() {
   const [details, setDetails] = useState("");
   const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+
     e.preventDefault();
     console.log({ date, name, email, details });
     setSubmitted(true);
