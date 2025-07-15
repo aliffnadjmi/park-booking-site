@@ -9,7 +9,7 @@ export default function Home() {
       className="min-h-screen flex flex-col items-center justify-center text-center p-6 bg-cover bg-center"
       style={{
         backgroundImage:
-          "url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/24/24/03/6d/kuantan-188.jpg?w=900&h=-1&s=1)",
+          "url('https://www.agoda.com/wp-content/uploads/2024/07/Gelora-Park-Kuantan-Malaysia.jpg)",
       }}
     >
       <motion.div
