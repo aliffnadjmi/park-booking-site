@@ -20,7 +20,7 @@ export default function Home() {
       >
         {/* Replace the src below with your logo if you have */}
         <img
-          src="https://via.placeholder.com/100x100.png?text=Logo"
+          src="mbklogo.png"
           alt="Park Logo"
           className="mx-auto rounded-full shadow-md"
           width={100}
