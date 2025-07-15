@@ -1,21 +1,44 @@
 "use client";
 
-import Navbar from "@/components/Navbar";
+import Link from "next/link";
+import { motion } from "framer-motion";
 
 export default function Home() {
   return (
-    <main>
-      <Navbar />
-      <section className="flex flex-col items-center justify-center min-h-screen">
-        <h1 className="text-3xl font-bold mb-4">Welcome to the Park Booking Site</h1>
-        <p className="mb-6">Book your park event easily with us.</p>
-        <a
-          href="/booking"
-          className="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 transition"
-        >
-          Book Now
-        </a>
-      </section>
+    <main
+      className="min-h-screen flex flex-col items-center justify-center text-center p-6 bg-cover bg-center"
+      style={{
+        backgroundImage:
+          "url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/24/24/03/6d/kuantan-188.jpg?w=900&h=-1&s=1)",
+      }}
+    >
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        className="bg-white/70 backdrop-blur-md rounded-xl p-8 max-w-2xl w-full space-y-6"
+      >
+        {/* Replace the src below with your logo if you have */}
+        <img
+          src="https://via.placeholder.com/100x100.png?text=Logo"
+          alt="Park Logo"
+          className="mx-auto rounded-full shadow-md"
+          width={100}
+          height={100}
+        />
+        <h1 className="text-4xl md:text-5xl font-bold text-green-800">
+          Welcome to Le-Park Kuantan
+        </h1>
+        <p className="text-lg md:text-xl text-green-700">
+          Book your event in a clean, peaceful space.
+        </p>
+        <Link href="/booking">
+          <button className="bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded-full shadow-md transition">
+            Book Now
+          </button>
+        </Link>
+      </motion.div>
     </main>
   );
 }
+
