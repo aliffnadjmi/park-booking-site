@@ -1,20 +1,8 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 
 export default function Home() {
-  const [date, setDate] = useState("");
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [details, setDetails] = useState("");
-  const [submitted, setSubmitted] = useState(false);
-
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    console.log({ date, name, email, details });
-    setSubmitted(true);
-  };
-
   return (
     <main className="min-h-screen flex flex-col items-center justify-center bg-white text-black p-4">
       <div className="max-w-lg w-full space-y-6">
@@ -31,4 +19,14 @@ export default function Home() {
         <section className="space-y-2">
           <h2 className="text-xl font-semibold">Contact</h2>
           <p>Email: parkbooking@example.com</p>
-          <p>Phon
+          <p>Phone: +60 12-345 6789</p>
+        </section>
+
+        <section className="space-y-4">
+          <h2 className="text-xl font-semibold">Book Your Event</h2>
+          <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSduy5cbE97FmIBMrwUpwZt6i-bRGGKKesiTTD1raPZOY1XYTg/viewform?embedded=true"
+            width="100%"
+            height="800"
+            frameBorder="0"
+
