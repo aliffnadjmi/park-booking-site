@@ -34,15 +34,22 @@ export default function Home() {
           <p>Phone: +60 12-345 6789</p>
         </section>
 
-        <section className="space-y-4">
-          <h2 className="text-xl font-semibold">Book Your Event</h2>
-          <form onSubmit={handleSubmit} className="space-y-2 flex flex-col">
-            <input
-              type="date"
-              value={date}
-              onChange={(e) => setDate(e.target.value)}
-              className="border rounded p-2"
-              required
+<section className="space-y-4">
+  <h2 className="text-xl font-semibold">Book Your Event</h2>
+  <iframe
+    src="https://docs.google.com/forms/d/e/1FAIpQLSduy5cbE97FmIBMrwUpwZt6i-bRGGKKesiTTD1raPZOY1XYTg/viewform?embedded=true"
+    width="100%"
+    height="800"
+    frameBorder="0"
+    marginHeight={0}
+    marginWidth={0}
+    className="rounded border"
+    title="Park Booking Form"
+  >
+    Loading…
+  </iframe>
+</section>
+
             />
             <input
               type="text"
